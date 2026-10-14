@@ -17,19 +17,19 @@ h_count=0
 hpp_count=0
 cpp_count=0
 
-# Vérifier si GameLoop existe
-if [ -d "GameLoop" ]; then
+# Vérifier si ProjetSFML existe
+if [ -d "ProjetSFML" ]; then
 
     # Compter les lignes de code
-    code_line_count=$(find GameLoop \
+    code_line_count=$(find ProjetSFML \
         -type d \( -name Dependencies -o -name x64 \) -prune -o \
         -type f \( -name "*.c" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
         -print | xargs wc -l 2>/dev/null | tail -n 1 | awk '{print $1}')
 
     # Compter les fichiers
-    h_count=$(find GameLoop -type d \( -name Dependencies -o -name x64 \) -prune -o -type f -name "*.h" -print | wc -l)
-    hpp_count=$(find GameLoop -type d \( -name Dependencies -o -name x64 \) -prune -o -type f -name "*.hpp" -print | wc -l)
-    cpp_count=$(find GameLoop -type d \( -name Dependencies -o -name x64 \) -prune -o -type f -name "*.cpp" -print | wc -l)
+    h_count=$(find ProjetSFML -type d \( -name Dependencies -o -name x64 \) -prune -o -type f -name "*.h" -print | wc -l)
+    hpp_count=$(find ProjetSFML -type d \( -name Dependencies -o -name x64 \) -prune -o -type f -name "*.hpp" -print | wc -l)
+    cpp_count=$(find ProjetSFML -type d \( -name Dependencies -o -name x64 \) -prune -o -type f -name "*.cpp" -print | wc -l)
 
 fi
 
@@ -38,7 +38,7 @@ fi
 echo "# Statistiques du projet"
 echo
 echo "- **Nombre total de commits : $commit_count**"
-echo "- **Nombre de lignes de code dans GameLoop : $code_line_count**"
+echo "- **Nombre de lignes de code dans ProjetSFML : $code_line_count**"
 echo
 echo "## Fichiers"
 echo "- **.h : $h_count**"

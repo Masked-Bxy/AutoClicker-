@@ -1,9 +1,9 @@
 # Statistiques du projet
 
-- **Nombre total de commits : 1**
-- **Nombre de lignes de code dans GameLoop : 0**
+- **Nombre total de commits : 2**
+- **Nombre de lignes de code dans ProjetSFML : 342772**
 
 ## Fichiers
-- **.h : 0**
-- **.hpp : 0**
-- **.cpp : 0**
+- **.h : 2**
+- **.hpp : 3**
+- **.cpp : 3**

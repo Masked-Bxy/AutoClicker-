@@ -1,2 +1,9 @@
-# AutoClicker!
-AutoClicker! is little project with objectif of simulate keys (mouse / keyboard / gamepad) 
+# Statistiques du projet
+
+- **Nombre total de commits : 1**
+- **Nombre de lignes de code dans GameLoop : 0**
+
+## Fichiers
+- **.h : 0**
+- **.hpp : 0**
+- **.cpp : 0**
